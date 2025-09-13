@@ -17,7 +17,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/portfolio-gift",
+    basename: "/gift-portfolio",
   },
 );
 
