@@ -5,16 +5,21 @@ import Layout from "./layout/Layout";
 const LandingPage = lazy(() => import("./pages/landingPage/LandingPage"));
 const ProjectsPage = lazy(() => import("./pages/projectsPage/ProjectsPage"));
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <LandingPage /> },
+        { path: "/projects", element: <ProjectsPage /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { index: true, element: <LandingPage /> },
-      { path: "/projects", element: <ProjectsPage /> },
-    ],
+    basename: "/portfolio-gift",
   },
-]);
+);
 
 function App() {
   return <RouterProvider router={router} />;

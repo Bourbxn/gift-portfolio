@@ -8,4 +8,7 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
   },
+  server: {
+    open: true,
+  },
 });
