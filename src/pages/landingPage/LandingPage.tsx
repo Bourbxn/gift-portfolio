@@ -8,7 +8,9 @@ function LandingPage() {
     <>
       <Banner />
       <Introduce />
-      <Projects title="Projects Experience" projects={projects.slice(6)} />
+      <div className="px-[108px]">
+        <Projects title="Projects Experience" projects={projects.slice(0, 6)} />
+      </div>
     </>
   );
 }
