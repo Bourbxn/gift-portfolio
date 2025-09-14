@@ -12,6 +12,8 @@ export { default as slip } from "./projects/slip.png";
 export { default as ttbFeatures } from "./projects/ttb-features.png";
 export { default as tutorForU } from "./projects/tutor-for-u.png";
 export { default as tutorial } from "./projects/tutorial.png";
+export { default as carParking } from "./projects/car-parking.png";
+export { default as visualDesign } from "./projects/visual-design.png";
 
 export { default as wow } from "./projects/wow/wow.png";
 export { default as wowError } from "./projects/wow/error.png";
