@@ -13,16 +13,16 @@ function ProjectOverview({ name, desc, role, responsibility, img }: Props) {
             <div className="grid grid-cols-2 gap-[40px]">
                 <div>
                     <h3 className="text-h3 text-black font-bold">Project Overview:</h3>
-                    <p className="text-normal text-black font-normal">{desc}</p>
+                    <p className="text-normal text-description font-normal">{desc}</p>
                 </div>
                 <div>
                     <div>
                         <h3 className="text-h3 text-black font-bold">Role:</h3>
-                        <p className="text-normal text-black font-normal">{role}</p>
+                        <p className="text-normal text-description font-normal">{role}</p>
                     </div>
                     <div>
                         <h3 className="text-h3 text-black font-bold">Responsibility:</h3>
-                        <p className="text-normal text-black font-normal">
+                        <p className="text-normal text-description font-normal">
                             {responsibility}
                         </p>
                     </div>

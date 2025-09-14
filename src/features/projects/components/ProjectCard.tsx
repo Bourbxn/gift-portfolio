@@ -19,7 +19,7 @@ function ProjectCard({ name, desc, img }: Props) {
             <img src={img} alt={name} />
             <div>
                 <h3 className="text-h3 text-black font-bold pb-[16px]">{name}</h3>
-                <p className="text-normal text-black font-normal">{desc}</p>
+                <p className="text-normal text-description font-normal">{desc}</p>
             </div>
         </div>
     );

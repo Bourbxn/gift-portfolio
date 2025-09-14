@@ -11,7 +11,9 @@ function SectionDetailCard({ detail }: Props) {
             <h3 className="text-h3-proj-detail text-black font-bold pb-[8px]">
                 {title}:
             </h3>
-            <p className="text-normal text-black font-normal pb-[24px]">{desc}</p>
+            <p className="text-normal text-description font-normal pb-[24px]">
+                {desc}
+            </p>
             <div
                 className={`grid ${img.length > 1 ? "grid-cols-2 gap-x-[24px]" : "grid-cols-1"} `}
             >
