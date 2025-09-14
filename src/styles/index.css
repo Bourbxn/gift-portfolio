@@ -42,11 +42,13 @@
   --color-secondary: #C1946B;
   --color-tertiary: #FFEEC0;
 
-  --text-normal: 24px;
+  --text-normal: 20px;
   --text-large: 32px;
   --text-h1: 100px;
-  --text-h2: 48px;
-  --text-h3: 30px;
+  --text-h2: 40px;
+  --text-h3: 26px;
+  --text-h2-proj-detail: 28px;
+  --text-h3-proj-detail: 24px;
 }
 
 @layer base {

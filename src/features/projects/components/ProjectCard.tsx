@@ -1,3 +1,6 @@
+import { useNavigate } from "react-router-dom";
+import slugify from "slugify";
+
 interface Props {
     name: string;
     desc: string;
@@ -5,8 +8,14 @@ interface Props {
 }
 
 function ProjectCard({ name, desc, img }: Props) {
+    let navigate = useNavigate();
     return (
-        <div className="flex flex-col gap-[48px]">
+        <div
+            className="flex flex-col gap-[48px] cursor-pointer"
+            onClick={() => {
+                navigate(`/projects/${slugify(name, { lower: true })}`);
+            }}
+        >
             <img src={img} alt={name} />
             <div>
                 <h3 className="text-h3 text-black font-bold">{name}</h3>

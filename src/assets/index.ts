@@ -12,7 +12,13 @@ export { default as slip } from "./projects/slip.png";
 export { default as ttbFeatures } from "./projects/ttb-features.png";
 export { default as tutorForU } from "./projects/tutor-for-u.png";
 export { default as tutorial } from "./projects/tutorial.png";
-export { default as wow } from "./projects/wow.png";
+
+export { default as wow } from "./projects/wow/wow.png";
+export { default as wowError } from "./projects/wow/error.png";
+export { default as wowMainFlow } from "./projects/wow/main-flow.png";
+export { default as wowPrototype } from "./projects/wow/prototype.png";
+export { default as wowUserTest1 } from "./projects/wow/user-test-1.png";
+export { default as wowUserTest2 } from "./projects/wow/user-test-2.png";
 
 export { default as avatar } from "./icon/avatar.png";
 export { default as arrowUpRight } from "./icon/arrow-up-right.svg";
