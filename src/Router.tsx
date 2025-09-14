@@ -1,5 +1,9 @@
 import { lazy } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import Layout from "./layout/Layout";
 
 const LandingPage = lazy(() => import("./pages/landingPage/LandingPage"));
@@ -15,8 +19,12 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <LandingPage /> },
       { path: "/projects", element: <ProjectsPage /> },
-      { path: "/projects/:id", element: <ProjectDetailPage /> },
+      { path: "/projects/:nameSlug", element: <ProjectDetailPage /> },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
   },
 ]);
 
