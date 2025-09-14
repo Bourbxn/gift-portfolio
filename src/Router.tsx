@@ -1,5 +1,9 @@
 import { lazy } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import Layout from "./layout/Layout";
 
 const LandingPage = lazy(() => import("./pages/landingPage/LandingPage"));
@@ -20,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>Page not found</div>,
+    element: <Navigate to="/" replace />,
   },
 ]);
 
