@@ -20,12 +20,22 @@ function RoundedButton({ size = "md", title, icon, onClick }: Props) {
         }
     };
 
+    const getTextSizeBySize = () => {
+        const defaultTextSize = "text-normal";
+        switch (size) {
+            case "md":
+                return defaultTextSize;
+            case "lg":
+                return "text-h3-proj-detail";
+        }
+    };
+
     return (
         <button
             className={`bg-secondary w-fit text-white rounded-full font-bold shadow-md  ${getSytlesBySize()} flex items-center gap-x-[12px] cursor-pointer`}
             onClick={onClick}
         >
-            <div>{title}</div>
+            <div className={`${getTextSizeBySize()}`}>{title}</div>
             {icon && <img src={icon} alt={title} />}
         </button>
     );

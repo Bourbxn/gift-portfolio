@@ -6,7 +6,7 @@ interface Props {
 function RoundedTag({ title, className }: Props) {
     return (
         <div
-            className={`bg-tertiary text-black font-normal px-[24px] py-[16px] rounded-full w-fit ${className}`}
+            className={`bg-tertiary text-black text-normal font-normal px-[24px] py-[16px] rounded-full w-fit ${className}`}
         >
             {title}
         </div>

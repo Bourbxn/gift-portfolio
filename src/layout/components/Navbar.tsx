@@ -28,7 +28,7 @@ function Navbar() {
           }}
         >
           <img src={avatar} alt="avatar" className="w-[33px] h-[38px]" />
-          <div>Gift</div>
+          <div className="text-normal">Gift</div>
         </a>
         <div className="bg-secondary/10 backdrop-blur-[40px] py-[12px] px-[24px] rounded-full flex gap-x-[56px]">
           {navList.map(({ title, icon, path }) => (
@@ -39,7 +39,7 @@ function Navbar() {
                 navigate(path);
               }}
             >
-              <div>{title}</div>
+              <div className="text-normal">{title}</div>
               {icon && (
                 <img src={icon} alt={title} className="w-[24px] h-[24px]" />
               )}
