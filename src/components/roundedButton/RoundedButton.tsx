@@ -9,24 +9,24 @@ interface Props {
 
 function RoundedButton({ size = "md", title, icon, onClick }: Props) {
     const getSytlesBySize = () => {
-        const defaultStyles = "px-[24px] py-[12px] text-normal";
+        const defaultStyles = "md:px-[24px] md:py-[12px] px-[16px] py-[8px]";
         switch (size) {
             case "md":
                 return defaultStyles;
             case "lg":
-                return "px-[32px] py-[16px] text-large";
+                return "md:px-[32px] md:py-[16px] px-[16px] py-[8px]";
             default:
                 return defaultStyles;
         }
     };
 
     const getTextSizeBySize = () => {
-        const defaultTextSize = "text-normal";
+        const defaultTextSize = "md:text-normal text-small";
         switch (size) {
             case "md":
                 return defaultTextSize;
             case "lg":
-                return "text-h3-proj-detail";
+                return "md:text-h3-proj-detail text-normal-mb";
         }
     };
 
@@ -36,7 +36,13 @@ function RoundedButton({ size = "md", title, icon, onClick }: Props) {
             onClick={onClick}
         >
             <div className={`${getTextSizeBySize()}`}>{title}</div>
-            {icon && <img src={icon} alt={title} />}
+            {icon && (
+                <img
+                    src={icon}
+                    alt={title}
+                    className="md:w-[24px] md:h-[24px] w-[16px] h-[16px]"
+                />
+            )}
         </button>
     );
 }

@@ -8,10 +8,10 @@ function SectionDetailCard({ detail }: Props) {
     const { title, desc, img } = detail;
     return (
         <div>
-            <h3 className="text-h3-proj-detail text-black font-bold pb-[8px]">
+            <h3 className="md:text-h3-proj-detail text-normal-mb text-black font-bold pb-[8px]">
                 {title}:
             </h3>
-            <p className="text-normal text-description font-normal pb-[24px]">
+            <p className="md:text-normal text-small text-description font-normal pb-[24px]">
                 {desc}
             </p>
             <div

@@ -11,15 +11,19 @@ function ProjectCard({ name, desc, img }: Props) {
     let navigate = useNavigate();
     return (
         <div
-            className="flex flex-col gap-[28px] cursor-pointer"
+            className="flex flex-col md:gap-[28px] gap-[16px] cursor-pointer"
             onClick={() => {
                 navigate(`/projects/${slugify(name, { lower: true })}`);
             }}
         >
             <img src={img} alt={name} />
             <div>
-                <h3 className="text-h3 text-black font-bold pb-[16px]">{name}</h3>
-                <p className="text-normal text-description font-normal">{desc}</p>
+                <h3 className="md:text-h3 text-normal-mb text-black font-bold md:pb-[16px] pb-[8px]">
+                    {name}
+                </h3>
+                <p className="md:text-normal text-small text-description font-normal">
+                    {desc}
+                </p>
             </div>
         </div>
     );
