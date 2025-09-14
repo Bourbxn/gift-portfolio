@@ -7,19 +7,21 @@ function Introduce() {
             <div className="w-[664px]">
                 <h1 className="font-semibold text-h1 text-secondary">Hello!</h1>
                 <h1 className="font-semibold text-h1 text-secondary">I’m Gift</h1>
-                <p className="text-black text-normal font-normal">
+                <p className="text-black text-h3-proj-detail font-normal">
                     I’m a UX/UI Designer passionate about crafting intuitive
                 </p>
-                <p className="text-black text-normal font-normal">
+                <p className="text-black text-h3-proj-detail font-normal">
                     and practical user experiences.
                 </p>
-                <p className="text-black text-normal font-normal">
+                <p className="text-black text-h3-proj-detail font-normal">
                     From user research to prototyping, I love turning ideas into
                 </p>
-                <p className="text-black text-normal font-normal">
+                <p className="text-black text-h3-proj-detail font-normal">
                     impactful designs — and I never stop learning to stay
                 </p>
-                <p className="text-black text-normal font-normal">ahead of trends.</p>
+                <p className="text-black text-h3-proj-detail font-normal">
+                    ahead of trends.
+                </p>
                 <div className="w-fit pt-[32px]">
                     <RoundedButton title="About Me" />
                 </div>
@@ -33,7 +35,7 @@ function Introduce() {
                 />
                 <RoundedTag
                     title="UX/UI Designer"
-                    className="top-[160px] left-[100px] absolute z-[-10]"
+                    className="top-[160px] left-[70px] absolute z-[-10]"
                 />
                 <RoundedTag
                     title="Computer Engineer"
