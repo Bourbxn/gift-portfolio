@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { ProjectCard, RoundedButton } from "../../components";
+import { RoundedButton } from "../../components";
 import { type Project } from "../../constants/projects";
 import { projects as constantProjects } from "../../constants/projects";
+import ProjectCard from "./components/ProjectCard";
 
 interface Props {
     title: string;
@@ -19,7 +20,7 @@ function Projects({ title, projects }: Props) {
                 ))}
             </div>
             {constantProjects.length !== projects.length && (
-                <div className="pb-[84px]">
+                <div>
                     <RoundedButton
                         title="View All Projects"
                         onClick={() => {

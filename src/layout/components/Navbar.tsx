@@ -22,7 +22,7 @@ function Navbar() {
     <nav className="fixed top-[28px] w-screen z-10">
       <div className="flex justify-between items-center px-[48px] font-bold  text-secondary text-normal">
         <a
-          className="bg-secondary/10 backdrop-blur-[40px] py-[12px] px-[24px] rounded-full flex gap-x-[11px] cursor-pointer"
+          className="bg-secondary/10 backdrop-blur-[40px] py-[12px] px-[24px] rounded-full flex gap-x-[11px] items-center cursor-pointer"
           onClick={() => {
             navigate("/");
           }}
@@ -30,7 +30,7 @@ function Navbar() {
           <img src={avatar} alt="avatar" className="w-[33px] h-[38px]" />
           <div>Gift</div>
         </a>
-        <div className="bg-secondary/10 py-[12px] px-[24px] rounded-full flex gap-x-[56px]">
+        <div className="bg-secondary/10 backdrop-blur-[40px] py-[12px] px-[24px] rounded-full flex gap-x-[56px]">
           {navList.map(({ title, icon, path }) => (
             <a
               className="flex gap-x-[4px] items-center cursor-pointer"
