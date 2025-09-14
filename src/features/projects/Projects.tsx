@@ -27,7 +27,6 @@ function Projects({ title, projects }: Props) {
                         title="View All Projects"
                         onClick={() => {
                             navigate("/projects");
-                            scrollTo({ top: 0 });
                         }}
                     />
                 </div>

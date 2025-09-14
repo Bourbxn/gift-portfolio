@@ -10,7 +10,7 @@ function LandingPage() {
         <Banner />
       </div>
       <Introduce />
-      <div className="md:px-[108px] px-[16px] md:py-0 py-[32px]">
+      <div className="md:px-[108px] px-[16px] md:py-0 md:pt-0 md:pb-0 pt-[48px] pb-[32px]">
         <Projects title="Projects Experience" projects={projects.slice(0, 6)} />
       </div>
     </>

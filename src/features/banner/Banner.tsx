@@ -16,7 +16,6 @@ function Banner() {
                             icon={arrowRight}
                             onClick={() => {
                                 navigate("/projects");
-                                scrollTo({ top: 0 });
                             }}
                         />
                     </div>
