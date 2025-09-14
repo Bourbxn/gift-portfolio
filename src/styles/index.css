@@ -43,12 +43,16 @@
   --color-tertiary: #FFEEC0;
   --color-description: #7A7A7A;
 
+  --text-extra-small: 12px;
+  --text-small: 14px;
   --text-normal: 20px;
+  --text-normal-mb: 16px;
   --text-large: 32px;
   --text-h1: 72px;
   --text-h2: 40px;
   --text-h3: 26px;
   --text-h2-proj-detail: 28px;
+  --text-h2-proj-detail-mb: 18px;
   --text-h3-proj-detail: 24px;
 }
 

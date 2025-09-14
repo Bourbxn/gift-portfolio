@@ -29,3 +29,4 @@ export { default as github } from "./icon/github.svg";
 export { default as linkedin } from "./icon/linkedin.svg";
 export { default as mail } from "./icon/mail.svg";
 export { default as arrowRight } from "./icon/arrow-right.svg";
+export { default as hamburger } from "./icon/hamburger.svg";

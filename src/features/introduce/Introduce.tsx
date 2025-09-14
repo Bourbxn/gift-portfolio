@@ -3,30 +3,25 @@ import { RoundedButton, RoundedTag } from "../../components";
 
 function Introduce() {
     return (
-        <div className="w-screen h-screen flex justify-between items-center pl-[108px] relative">
-            <div className="w-[664px]">
-                <h1 className="font-semibold text-h1 text-secondary">Hello!</h1>
-                <h1 className="font-semibold text-h1 text-secondary">I’m Gift</h1>
-                <p className="text-black text-h3-proj-detail font-normal">
-                    I’m a UX/UI Designer passionate about crafting intuitive
+        <div className="w-screen md:h-screen flex md:flex-row flex-col justify-between items-center md:pl-[108px] pl-[16px] pr-[16px] md:pr-0 relative">
+            <div className="md:w-[664px]">
+                <h1 className="font-semibold md:text-h1 text-large text-secondary">
+                    Hello!
+                </h1>
+                <h1 className="font-semibold md:text-h1 text-large text-secondary">
+                    I’m Gift
+                </h1>
+                <p className="text-black md:text-h3-proj-detail text-extra-small font-normal">
+                    I’m a UX/UI Designer passionate about crafting intuitive and practical
+                    user experiences. From user research to prototyping, I love turning
+                    ideas into impactful designs — and I never stop learning to stay ahead
+                    of trends.
                 </p>
-                <p className="text-black text-h3-proj-detail font-normal">
-                    and practical user experiences.
-                </p>
-                <p className="text-black text-h3-proj-detail font-normal">
-                    From user research to prototyping, I love turning ideas into
-                </p>
-                <p className="text-black text-h3-proj-detail font-normal">
-                    impactful designs — and I never stop learning to stay
-                </p>
-                <p className="text-black text-h3-proj-detail font-normal">
-                    ahead of trends.
-                </p>
-                <div className="w-fit pt-[32px]">
+                <div className="w-fit md:pt-[32px] pt-[16px]">
                     <RoundedButton title="About Me" />
                 </div>
             </div>
-            <div className="relative">
+            <div className="relative md:block hidden">
                 <img src={portrait} alt="portrait" className="w-[711px] h-[711px]" />
                 <img
                     src={circleYellowCloudedFull}
@@ -45,7 +40,7 @@ function Introduce() {
             <img
                 src={circleYellowCloudedFull}
                 alt="circleYellowClouded"
-                className="absolute z-[-10] w-[773px] h-[773px] left-[-315px] top-[-451px]"
+                className="absolute z-[-10] md:w-[773px] md:h-[773px] w-[400px] h-[400px] md:left-[-315px] md:top-[-451px] left-[-83px] top-[-100px]"
             />
         </div>
     );

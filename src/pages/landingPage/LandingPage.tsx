@@ -6,9 +6,11 @@ import { Projects } from "../../features/projects";
 function LandingPage() {
   return (
     <>
-      <Banner />
+      <div className="md:pt-0 pt-[66px]">
+        <Banner />
+      </div>
       <Introduce />
-      <div className="px-[108px]">
+      <div className="md:px-[108px] px-[16px] md:py-0 py-[32px]">
         <Projects title="Projects Experience" projects={projects.slice(0, 6)} />
       </div>
     </>

@@ -13,8 +13,10 @@ function Projects({ title, projects }: Props) {
     let navigate = useNavigate();
     return (
         <div>
-            <h2 className="text-h2 text-secondary font-bold pb-[48px]">{title}</h2>
-            <div className="grid grid-cols-2 gap-[48px] pb-[48px]">
+            <h2 className="md:text-h2 text-h3-proj-detail text-secondary font-bold md:pb-[48px] pb-[24px]">
+                {title}
+            </h2>
+            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[48px] gap-[24px] md:pb-[48px] pb-[24px]">
                 {projects.map((proj) => (
                     <ProjectCard {...proj} key={proj.name} />
                 ))}

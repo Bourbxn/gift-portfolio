@@ -6,7 +6,7 @@ function Banner() {
     let navigate = useNavigate();
     return (
         <>
-            <div className="w-screen h-screen flex justify-center items-center px-[114px]">
+            <div className="w-screen md:h-screen md:py-[0px] py-[48px] flex justify-center items-center md:px-[114px] px-[16px]">
                 <div className="flex flex-col gap-y-[56px]">
                     <img src={banner} alt="banner" />
                     <div className="w-full flex justify-center">
@@ -25,7 +25,7 @@ function Banner() {
             <img
                 src={circleYellowClouded}
                 alt="circleYellowClouded"
-                className="w-[683px] h-[683px] absolute top-0 right-0 z-[-1000]"
+                className="md:w-[683px] md:h-[683px] w-[330px] h-[330px] absolute md:top-0 top-[66px] right-0 z-[-1000]"
             />
         </>
     );
