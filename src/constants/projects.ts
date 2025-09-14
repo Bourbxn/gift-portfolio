@@ -8,6 +8,8 @@ import {
     ttbFeatures,
     tutorForU,
     tutorial,
+    carParking,
+    visualDesign,
     wow,
     wowError,
     wowMainFlow,
@@ -310,6 +312,40 @@ export const projects: Project[] = [
         ],
     },
     {
+        name: "Car Parking",
+        desc: "Redesigned character illustrations for ttb and created squad-based visuals for each release, enhancing the brand identity and making in-app content more engaging and easy to understand.",
+        img: carParking,
+        role: "role",
+        responsibility: "responsibility",
+        sections: [
+            {
+                title: "Design & Testing Process",
+                details: [
+                    {
+                        title: "Main Flow",
+                        desc: "the main flow that users actually follow, illustrating a smooth and intuitive points redemption journey, ensuring a seamless and straightforward experience",
+                        img: [wowMainFlow],
+                    },
+                    {
+                        title: "Error Handling:",
+                        desc: "Within the redemption flow, error cases were designed to address potential user mistakes. Due to the complex rules, error handling helps users understand these limitations and minimize confusion.",
+                        img: [wowError],
+                    },
+                    {
+                        title: "Prototyping",
+                        desc: "The Interactive Prototype simulated real conditions using variables like user points and redeemable amounts, allowing realistic usability testing.",
+                        img: [wowPrototype],
+                    },
+                    {
+                        title: "Usability Testing",
+                        desc: "Usability testing with five users showed that all participants were able to successfully redeem WOW Points as discounts, confirming that the designed redemption flow is clear and functional.",
+                        img: [wowUserTest1, wowUserTest2],
+                    },
+                ],
+            },
+        ],
+    },
+    {
         name: "Home Page Redesign",
         desc: "Redesigned the Home Page of the SCB app to enhance user experience and modernize the interface.",
         img: redesignScb,
@@ -344,41 +380,7 @@ export const projects: Project[] = [
         ],
     },
     {
-        name: "Car Parking",
-        desc: "Redesigned character illustrations for ttb and created squad-based visuals for each release, enhancing the brand identity and making in-app content more engaging and easy to understand.",
-        img: characterTtb,
-        role: "role",
-        responsibility: "responsibility",
-        sections: [
-            {
-                title: "Design & Testing Process",
-                details: [
-                    {
-                        title: "Main Flow",
-                        desc: "the main flow that users actually follow, illustrating a smooth and intuitive points redemption journey, ensuring a seamless and straightforward experience",
-                        img: [wowMainFlow],
-                    },
-                    {
-                        title: "Error Handling:",
-                        desc: "Within the redemption flow, error cases were designed to address potential user mistakes. Due to the complex rules, error handling helps users understand these limitations and minimize confusion.",
-                        img: [wowError],
-                    },
-                    {
-                        title: "Prototyping",
-                        desc: "The Interactive Prototype simulated real conditions using variables like user points and redeemable amounts, allowing realistic usability testing.",
-                        img: [wowPrototype],
-                    },
-                    {
-                        title: "Usability Testing",
-                        desc: "Usability testing with five users showed that all participants were able to successfully redeem WOW Points as discounts, confirming that the designed redemption flow is clear and functional.",
-                        img: [wowUserTest1, wowUserTest2],
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        name: "Redesign",
+        name: "Character Redesign",
         desc: "Redesigned character illustrations for ttb and created squad-based visuals for each release, enhancing the brand identity and making in-app content more engaging and easy to understand.",
         img: characterTtb,
         role: "role",
@@ -414,7 +416,7 @@ export const projects: Project[] = [
     {
         name: "Visual Design",
         desc: "Redesigned character illustrations for ttb and created squad-based visuals for each release, enhancing the brand identity and making in-app content more engaging and easy to understand.",
-        img: characterTtb,
+        img: visualDesign,
         role: "role",
         responsibility: "responsibility",
         sections: [
