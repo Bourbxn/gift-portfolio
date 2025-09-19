@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { RoundedButton } from "../../components";
-import { type Project } from "../../constants/projects";
 import { projects as constantProjects } from "../../constants/projects";
 import ProjectCard from "./components/ProjectCard";
+import type { Project } from "../../types/projects";
 
 interface Props {
     title: string;

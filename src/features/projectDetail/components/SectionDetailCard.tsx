@@ -1,4 +1,4 @@
-import type { Detail } from "../../../constants/projects";
+import type { Detail } from "../../../types/projects";
 import ImageSetsPreview from "./ImageSetsPreview";
 
 interface Props {

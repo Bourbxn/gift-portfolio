@@ -1,4 +1,4 @@
-import type { Detail } from "../../constants/projects";
+import type { Detail } from "../../types/projects";
 import SectionDetailCard from "./components/SectionDetailCard";
 
 interface Props {
