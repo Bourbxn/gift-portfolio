@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
-import { projects, type Project } from "../../constants/projects";
+import { projects } from "../../constants/projects";
 import slugify from "slugify";
 import PageContainer from "../PageContainer";
 import { ProjectOverview } from "../../features/projectOverview";
 import { ProjectDetail } from "../../features/projectDetail";
+import type { Project } from "../../types/projects";
 
 function ProjectDetailPage() {
   const { nameSlug } = useParams();

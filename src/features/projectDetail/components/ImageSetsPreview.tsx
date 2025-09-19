@@ -1,4 +1,4 @@
-import type { ImageSet } from "../../../constants/projects";
+import type { ImageSet } from "../../../types/projects";
 
 interface Props {
     imgSets: ImageSet[][];
