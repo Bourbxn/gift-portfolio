@@ -4,9 +4,17 @@ interface Props {
     role: string;
     responsibility: string;
     img: string;
+    title: string;
 }
 
-function ProjectOverview({ name, desc, role, responsibility, img }: Props) {
+function ProjectOverview({
+    name,
+    desc,
+    role,
+    responsibility,
+    img,
+    title,
+}: Props) {
     return (
         <div>
             <h2 className="md:text-h2 text-h3-proj-detail text-secondary font-bold md:pb-[24px] pb-[16px]">
@@ -41,6 +49,9 @@ function ProjectOverview({ name, desc, role, responsibility, img }: Props) {
                 </div>
             </div>
             <img src={img} alt="name" className="md:py-[44px] py-[24px]" />
+            <h2 className="md:text-h2-proj-detail text-h2-proj-detail-mb text-secondary font-bold ">
+                {title}
+            </h2>
         </div>
     );
 }
