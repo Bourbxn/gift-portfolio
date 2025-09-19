@@ -7,7 +7,16 @@ import { ProjectDetail } from "../../features/projectDetail";
 
 function ProjectDetailPage() {
   const { nameSlug } = useParams();
-  const { name, desc, img, role, responsibility, sections } = projects.find(
+  const {
+    name,
+    desc,
+    img,
+    role,
+    responsibility,
+    title,
+    details,
+    splitCols = false,
+  } = projects.find(
     (proj) => slugify(proj.name, { lower: true }) === nameSlug,
   ) as Project;
   return (
@@ -18,8 +27,9 @@ function ProjectDetailPage() {
         role={role}
         img={img}
         responsibility={responsibility}
+        title={title}
       />
-      <ProjectDetail sections={sections} />
+      <ProjectDetail details={details} splitCols={splitCols} />
     </PageContainer>
   );
 }
