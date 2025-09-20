@@ -12,8 +12,8 @@ import { uxuiFeatureProject } from "./projects/uxuiFeatureProject";
 import { wowProject } from "./projects/wowProject";
 
 export const projects: Project[] = [
-    wowProject,
     commonPaymentProject,
+    wowProject,
     tutorialProject,
     slipProject,
     uxuiFeatureProject,
