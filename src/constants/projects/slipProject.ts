@@ -27,6 +27,8 @@ import {
 
 export const slipProject: Project = {
     name: "Custom Slip",
+    summary:
+        "Designed customizable digital slips to make banking more intuitive and engaging for users.",
     desc: "Designed customizable digital transaction slips to make banking more intuitive and engaging. The goal was to create visually appealing and personalized slips that enhance user satisfaction and bring more delight into the everyday banking experience.",
     img: slip,
     role: ROLE.UXUI_DESIGNER,

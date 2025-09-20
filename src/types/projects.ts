@@ -21,6 +21,7 @@ export interface Detail {
 
 export interface Project {
     name: string;
+    summary: string;
     desc: string;
     img: string;
     role: string;

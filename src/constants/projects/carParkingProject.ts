@@ -14,6 +14,8 @@ import {
 export const carParkingProject: Project = {
     name: "Car Parking",
     desc: "Designed the UX/UI for both the customer interface (view parking rates, make online payments) and the admin interface (system configuration and management dashboard). The project aims to allow customers to conveniently check parking fees and pay directly through the website, reducing staff involvement and minimizing errors in manual fee calculations.",
+    summary:
+        "Designed the UX/UI for both user interface (view parking rates, make online payments) and admin interface (system configuration and management dashboard).",
     img: carParking,
     role: `${ROLE.UXUI_DESIGNER}, ${ROLE.FRONTEND_DEVELOPER}`,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}, ${RESPONSIBILITY.FRONTEND_DEVELOPMENT}, ${RESPONSIBILITY.OCR_IMPLEMENTATION}`,

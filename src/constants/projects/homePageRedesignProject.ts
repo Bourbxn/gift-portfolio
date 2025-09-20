@@ -18,6 +18,8 @@ import {
 export const homePageRedesignProject: Project = {
     name: "Home Page Redesign",
     desc: "Redesigned the Home Page of the SCB app as a personal assignment to enhance user experience and modernize the interface. (This project was a personal exploration and not an official redesign for SCB.)",
+    summary:
+        "Redesigned the Home Page of the SCB app to enhance user experience and modernize the interface.",
     img: redesignScb,
     role: ROLE.UXUI_DESIGNER,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}, ${RESPONSIBILITY.PROTOTYPING}, ${RESPONSIBILITY.USABILITY_TESTING}`,

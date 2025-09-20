@@ -13,6 +13,7 @@ import {
 
 export const tutorForUProject: Project = {
     name: "Tutor for U",
+    summary: "Website for discovering and enrolling in online courses by institutions, with the option for users to register as tutors and offer their own courses.",
     desc: "Website for discovering and enrolling in online courses by institutions, with the option for users to register as tutors and offer their own courses.",
     img: tutorForU,
     role: ROLE.UXUI_DESIGNER,

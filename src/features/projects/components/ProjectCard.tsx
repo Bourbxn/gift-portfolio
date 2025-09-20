@@ -3,11 +3,11 @@ import slugify from "slugify";
 
 interface Props {
     name: string;
-    desc: string;
+    summary: string;
     img: string;
 }
 
-function ProjectCard({ name, desc, img }: Props) {
+function ProjectCard({ name, summary, img }: Props) {
     let navigate = useNavigate();
     return (
         <div
@@ -22,7 +22,7 @@ function ProjectCard({ name, desc, img }: Props) {
                     {name}
                 </h3>
                 <p className="md:text-normal text-small text-description font-normal">
-                    {desc}
+                    {summary}
                 </p>
             </div>
         </div>
