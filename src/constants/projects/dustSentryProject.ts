@@ -15,6 +15,8 @@ import {
 
 export const dustSentryProject: Project = {
     name: "Dust Sentry",
+    summary:
+        "Application for monitoring PM2.5, purchasing dust-protection products, and controlling smart home devices.",
     desc: "Designed a mobile application that provides real-time PM2.5 monitoring, enables users to purchase dust-protection products, and integrates smart home control to improve indoor air quality. Responsibilities included UX/UI design, prototyping, and usability testing.",
     img: dustSentry,
     role: ROLE.UXUI_DESIGNER,

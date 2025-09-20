@@ -11,6 +11,8 @@ import { RESPONSIBILITY, ROLE } from "../constants";
 
 export const wowProject: Project = {
     name: "WOW Points Redemption",
+    summary:
+        "A feature on the ttb touch app that enables users to redeem WOW points as instant discounts during payment, enhancing convenience and engagement.",
     desc: "A feature on the ttb touch app designed to enhance the user experience by allowing customers to redeem WOW Points as instant discounts during payment, making the process simpler and more rewarding.",
     img: wow,
     role: ROLE.UXUI_DESIGNER,

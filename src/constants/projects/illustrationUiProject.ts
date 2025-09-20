@@ -14,6 +14,8 @@ import {
 
 export const illustrationUiProject: Project = {
     name: "Illustration & UI Assets",
+    summary:
+        "Created illustrations to support app content and branding, including a redesigned ttb bank character for a fresh visual identity.",
     desc: "Created illustrations to support in-app content and branding, enhancing the user experience. The project also included redesigning the bank’s character for ttb, providing a fresh and consistent visual identity across the app and other bank materials.",
     img: visualDesign,
     role: ROLE.UXUI_DESIGNER,

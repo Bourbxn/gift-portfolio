@@ -15,6 +15,8 @@ import {
 
 export const uxuiFeatureProject: Project = {
     name: "UX/UI Feature Projects",
+    summary:
+        "Contributed to the design and development of various features on the ttb touch app, enhancing the overall user experience.",
     desc: "Contributed to the design and development of various features on the ttb touch app, enhancing the overall user experience.",
     img: ttbFeatures,
     role: ROLE.UXUI_DESIGNER,

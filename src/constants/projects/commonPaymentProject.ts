@@ -22,6 +22,8 @@ import { RESPONSIBILITY, ROLE } from "../constants";
 export const commonPaymentProject: Project = {
     name: "Common Payment",
     desc: "This project focused on designing and improving app flows by developing a common payment system. The goal was to unify the payment experience across different services, reduce user confusion, and streamline the overall payment process.",
+    summary:
+        "Designed and improved app flows by developing a common payment system, reducing user confusion and streamlining the payment experience.",
     img: commonPayment,
     role: ROLE.UXUI_DESIGNER,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}, ${RESPONSIBILITY.PROTOTYPING}, ${RESPONSIBILITY.USABILITY_TESTING}`,
