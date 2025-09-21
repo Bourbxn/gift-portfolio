@@ -1,5 +1,5 @@
 import type { Project } from "../../types/projects";
-import { RESPONSIBILITY, ROLE } from "../constants";
+import { DEMO_TYPE, RESPONSIBILITY, ROLE } from "../constants";
 
 import { playboard, playboardCms, playboardLearing } from "../../assets";
 
@@ -12,6 +12,10 @@ export const playboardProject: Project = {
     role: ROLE.UXUI_DESIGNER,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}, ${RESPONSIBILITY.PROTOTYPING}, ${RESPONSIBILITY.USABILITY_TESTING}`,
     title: "Design",
+    demo: {
+        url: "https://www.playboard-uat.arkcube.com/",
+        type: DEMO_TYPE.WEBSITE,
+    },
     details: [
         {
             title: "CMS (Creator)",

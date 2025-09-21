@@ -1,5 +1,5 @@
 import type { Project } from "../../types/projects";
-import { RESPONSIBILITY, ROLE } from "../constants";
+import { DEMO_TYPE, RESPONSIBILITY, ROLE } from "../constants";
 
 import {
     carParking,
@@ -20,6 +20,10 @@ export const carParkingProject: Project = {
     role: `${ROLE.UXUI_DESIGNER}, ${ROLE.FRONTEND_DEVELOPER}`,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}, ${RESPONSIBILITY.FRONTEND_DEVELOPMENT}, ${RESPONSIBILITY.OCR_IMPLEMENTATION}`,
     title: "Design & Testing Process",
+    demo: {
+        url: "https://www.youtube.com/watch?v=hGeBW-9M0Mo",
+        type: DEMO_TYPE.DEMO,
+    },
     details: [
         {
             title: "Customer Website",

@@ -11,6 +11,7 @@ const ProjectsPage = lazy(() => import("./pages/projectsPage/ProjectsPage"));
 const ProjectDetailPage = lazy(
   () => import("./pages/projectDetailPage/ProjectDetailPage"),
 );
+const AboutMePage = lazy(() => import("./pages/aboutMePage/AboutMePage"));
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { index: true, element: <LandingPage /> },
       { path: "/projects", element: <ProjectsPage /> },
       { path: "/projects/:nameSlug", element: <ProjectDetailPage /> },
+      { path: "/about-me", element: <AboutMePage /> },
     ],
   },
   {

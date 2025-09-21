@@ -1,3 +1,7 @@
+import { arrowUpRight } from "../../assets";
+import { DEMO_TYPE } from "../../constants/constants";
+import type { Demo } from "../../types/projects";
+
 interface Props {
     name: string;
     desc: string;
@@ -5,6 +9,7 @@ interface Props {
     responsibility: string;
     img: string;
     title: string;
+    demo?: Demo;
 }
 
 function ProjectOverview({
@@ -14,6 +19,7 @@ function ProjectOverview({
     responsibility,
     img,
     title,
+    demo,
 }: Props) {
     return (
         <div>
@@ -49,9 +55,30 @@ function ProjectOverview({
                 </div>
             </div>
             <img src={img} alt="name" className="md:py-[44px] py-[24px]" />
-            <h2 className="md:text-h2-proj-detail text-h2-proj-detail-mb text-secondary font-bold ">
-                {title}
-            </h2>
+            <div className="flex justify-between items-center">
+                <h2 className="md:text-h2-proj-detail text-h2-proj-detail-mb text-secondary font-bold ">
+                    {title}
+                </h2>
+                {demo && (
+                    <a
+                        className="flex items-center md:gap-x-[8px] gap-x-[4px] text-secondary font-normal md:text-normal text-small"
+                        href={demo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div className="underline">
+                            {demo.type === DEMO_TYPE.WEBSITE
+                                ? "View on Website"
+                                : "View Demo"}
+                        </div>
+                        <img
+                            src={arrowUpRight}
+                            alt="arrowUpRight"
+                            className="md:w-[20px] md:h-[20px] w-[16px] h-[16px]"
+                        />
+                    </a>
+                )}
+            </div>
         </div>
     );
 }
