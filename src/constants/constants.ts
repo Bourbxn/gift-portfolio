@@ -13,3 +13,8 @@ export const RESPONSIBILITY = {
     FRONTEND_DEVELOPMENT: "Frontend development",
     OCR_IMPLEMENTATION: "OCR implementation",
 };
+
+export const DEMO_TYPE = {
+    WEBSITE: "website",
+    DEMO: "demo",
+};

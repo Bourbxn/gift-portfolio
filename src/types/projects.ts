@@ -1,3 +1,5 @@
+import type { DEMO_TYPE } from "../constants/constants";
+
 export interface ImageSet {
     title?: string;
     colSpan?: number;
@@ -19,6 +21,13 @@ export interface Detail {
     fixedCols?: boolean;
 }
 
+export type DemoType = (typeof DEMO_TYPE)[keyof typeof DEMO_TYPE];
+
+export interface Demo {
+    url: string;
+    type: DemoType;
+}
+
 export interface Project {
     name: string;
     summary: string;
@@ -27,6 +36,7 @@ export interface Project {
     role: string;
     responsibility: string;
     title: string;
+    demo?: Demo;
     splitCols?: boolean;
     details: Detail[];
 }

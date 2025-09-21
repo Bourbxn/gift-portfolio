@@ -7,7 +7,7 @@ import {
 } from "../../assets";
 
 import type { Project } from "../../types/projects";
-import { RESPONSIBILITY, ROLE } from "../constants";
+import { DEMO_TYPE, RESPONSIBILITY, ROLE } from "../constants";
 
 export const tutorialProject: Project = {
     name: "Tutorial ttb touch",
@@ -18,6 +18,10 @@ export const tutorialProject: Project = {
     role: ROLE.UXUI_DESIGNER,
     responsibility: `${RESPONSIBILITY.UXUI_DESIGN}`,
     title: "Design",
+    demo: {
+        url: "https://www.ttbbank.com/th/ttb-touch/userguide",
+        type: DEMO_TYPE.WEBSITE,
+    },
     details: [
         {
             title: "Tutorial screens on website",

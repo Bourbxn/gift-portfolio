@@ -7,6 +7,8 @@ export { default as linkedin } from "./icon/linkedin.svg";
 export { default as mail } from "./icon/mail.svg";
 export { default as arrowRight } from "./icon/arrow-right.svg";
 export { default as hamburger } from "./icon/hamburger.svg";
+export { default as circle1 } from "./icon/circle-1.svg";
+export { default as line } from "./icon/line.svg";
 
 // landing
 export { default as circleYellowClouded } from "./landing/circle-yellow-clouded.png";
@@ -144,3 +146,6 @@ export { default as carParkingAdminWeb } from "./projects/car-parking/admin-web.
 export { default as carParkingCustomer1 } from "./projects/car-parking/customer-1.png";
 export { default as carParkingCustomer2 } from "./projects/car-parking/customer-2.png";
 export { default as carParkingTesting } from "./projects/car-parking/testing.png";
+
+// about-me
+export { default as profile } from "./about-me/profile.png";

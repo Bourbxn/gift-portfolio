@@ -15,6 +15,7 @@ function ProjectDetailPage() {
     role,
     responsibility,
     title,
+    demo,
     details,
     splitCols = false,
   } = projects.find(
@@ -29,6 +30,7 @@ function ProjectDetailPage() {
         img={img}
         responsibility={responsibility}
         title={title}
+        demo={demo}
       />
       <ProjectDetail details={details} splitCols={splitCols} />
     </PageContainer>

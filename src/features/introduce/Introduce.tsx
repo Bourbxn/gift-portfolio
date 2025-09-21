@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { portrait, circleYellowCloudedFull } from "../../assets";
 import { RoundedButton, RoundedTag } from "../../components";
 
 function Introduce() {
+    const navigate = useNavigate();
     return (
         <div className="w-screen md:h-screen flex md:flex-row flex-col justify-between items-center md:pl-[108px] pl-[16px] pr-[16px] md:pr-0 relative">
             <div className="md:w-[664px]">
@@ -18,7 +20,12 @@ function Introduce() {
                     of trends.
                 </p>
                 <div className="w-fit md:pt-[32px] pt-[16px]">
-                    <RoundedButton title="About Me" />
+                    <RoundedButton
+                        title="About Me"
+                        onClick={() => {
+                            navigate("/about-me");
+                        }}
+                    />
                 </div>
             </div>
             <div className="relative md:block hidden">
